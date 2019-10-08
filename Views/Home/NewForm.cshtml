@@ -1,0 +1,19 @@
+@model LostInTheWoods.Models.Trail
+
+	<form action="NewTrail" method="post">
+		<span asp-validation-for="Name"></span>
+		<label asp-for="Name"></label>
+		<input asp-for="Name">
+		<span asp-validation-for="Description"></span>
+		<label asp-for="Description"></label>
+		<input asp-for="Description">
+		<span asp-validation-for="Length"></span>
+		<label asp-for="Length"></label>
+		<input asp-for="Length">
+		<span asp-validation-for="Elevation"></span>
+		<label asp-for="Elevation"></label>
+		<input asp-for="Elevation">
+		<button type="submit">Submit</button>
+	</form>
+	<a href="/">Back</a>
+

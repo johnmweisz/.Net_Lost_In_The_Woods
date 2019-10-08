@@ -1,0 +1,11 @@
+﻿@model IEnumerable<LostInTheWoods.Models.Trail>
+@{
+    <a href="NewTrail">Add trail</a>
+    foreach (var trail in Model)
+    {
+        <p>Trail Name: @trail.Name</p>
+        <p>Description: @trail.Description</p>
+        <p>Length: @trail.Length Miles</p>
+        <a href="trails/@trail.Id">Detail</a> <a href="delete/@trail.Id">Delete</a>
+    }
+}
